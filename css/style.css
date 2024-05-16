@@ -1,0 +1,426 @@
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+@font-face {
+    font-family: "Uncut sans"; 
+    src: url('../fonts/UncutSans-Regular.woff');
+    src: url('../fonts/UncutSans-Semibold.woff');
+    src: url('../fonts/UncutSans-Medium.woff');
+    src: url('../fonts/UncutSans-Book.woff');
+    src: url('../fonts/UncutSans-Light.woff');
+}
+
+@font-face{ 
+    font-family: "Uncut sans Medium";
+    src: url('../fonts/UncutSans-Medium.woff');
+}    
+
+@font-face{ 
+    font-family: "Uncut sans semibold";
+    src: url('../fonts/UncutSans-Semibold.woff');
+     font-weight: 500;font-weight: 500;
+}
+
+@font-face{ 
+    font-family: "Uncut sans semibold Italic";
+    src: url('../fonts/UncutSans-SemiboldItalic.woff');
+}
+
+@font-face {
+    font-family: "Uncut sans Italic";
+    src: url('../fonts/UncutSans-RegularItalic.woff');
+    src: url('../fonts/UncutSans-SemiboldItalic.woff');
+    src: url('../fonts/UncutSans-MediumItalic.woff');
+    src: url('../fonts/UncutSans-BookItalic.woff');
+    src: url('../fonts/UncutSans-LightItalic.woff');
+}
+
+body{
+    overflow-x: hidden;
+    font-family: "Uncut sans";
+    font-optical-sizing: auto;
+}
+
+
+/*HEADER*/
+header{
+    width: 100%;
+    height: auto;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+}
+
+.overlay{
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: .5s;
+}
+
+.overlay-content{
+    position: relative;
+    top: 25%;
+    width: 100%;
+    margin-top: 30px;
+    padding:0% 0% 0% 3%
+}
+
+.overlay a{
+    padding: 8px;
+    text-decoration: none;
+    font-family: "Uncut sans semibold";
+    font-size: 4.5rem;
+    color: white;
+    display: block;
+    transition: .3s;
+}
+
+.overlay a:hover{
+    font-family: "Uncut sans semibold Italic";
+    text-decoration-line: underline;
+}
+
+.overlay .closebtn{
+    position: absolute;
+    top: 20px;
+    right: 45px;
+}
+
+#logotipo{
+    padding: 2%;
+    cursor: pointer;
+}
+
+#logotipo img{
+    color: white;
+    width: 100%;
+}
+
+#menu{
+    padding: 2%;
+    cursor: pointer;
+}
+
+#menu img{
+    color: white;
+    width: 100%;
+} 
+/*HEADER*/
+
+
+/*GRUPOS PROGRAMACIÓN*/
+#cabecera{
+    width: 100vw;
+    height: auto;
+    color: black;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#cabecera2{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-bottom: 10%;
+    padding:2% 2% 2% 2%;
+}
+
+#grupos {
+    width: 100vw;
+    height: auto;
+    color: black;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+/*    margin: 5px;*/
+}
+
+.grupo {
+    width: 32%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-bottom: 10%;
+    padding:2% 2% 2% 2%;
+}
+
+.grupo img {
+    width: 100%;
+    padding:0% 0% 5% 0%;
+}
+
+.grupo h3 {
+    width: 80%;
+}
+
+.grupo h3:hover{
+    font-family: "Uncut sans Italic";
+    text-decoration-line: underline;
+}
+
+
+/*CONTAINER*/
+.container {
+    display: flex;
+}
+
+.left-section, .right-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.left-section {
+    flex-direction: column;
+    color: white;
+    text-align: left;
+    background-color: #121212;
+    padding: 5% 3% 3% 3%;
+}
+
+.left-section h6, hr{
+    margin-bottom: 1%;
+}
+
+.left-section h2{
+    padding: 10% 0% 3% 0%;
+}
+
+#imagehome {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+hr{
+    width: 100%;
+    height: auto;
+    color: white;
+    text-decoration-thickness: 3px;
+}
+
+/*ESTILOS*/
+h1{
+    font-family: "Uncut sans Bold";
+    font-weight: 800;  
+    font-size: 2rem;
+    width: 100%;
+    padding: 10% 0% 10% 0%;
+}
+
+h2 {
+    font-family: "Uncut sans Medium";
+    font-weight: 500; 
+    font-size: 2.8rem;
+    width: 100%;
+    padding: 0% 0% 3% 0%;
+}
+
+h3{
+    font-weight: 800; 
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 0% 0% 1% 0%;
+}
+
+h4{
+    font-weight: 1000; 
+    font-size: 1.5rem;
+    width: 70%;
+    text-decoration: underline;
+    padding: 0% 0% 6% 0%;
+}
+
+h6{
+    font-weight: bold; 
+    font-size: 1rem;
+    width: 70%;
+}
+
+p {
+    font-weight: Book; 
+    font-size: 1rem;
+    width: 70%;
+}
+
+
+/*FORMULARI*/
+
+.contacte {
+    width: 100%;
+    height: auto;
+    color: white;
+    background-color: #121212;
+    display:flex;
+    flex-wrap:wrap;
+    padding:3% 5% 3% 5%;
+}
+
+.formulari {
+    width: 50%;
+    height: auto;
+    padding: 2%;
+}
+
+.mapa {
+    width: 50vh;
+    height: 100%;
+}
+
+#textarea {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    font-size: 4rem;
+    font-weight: bold;
+    color: black;
+}
+
+li {
+    color: white;
+    font-size:1.5rem;
+    padding-bottom:2%;
+}
+
+.button {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+/*FOOTER*/
+footer {
+    background-color: #BFBFBF;
+    padding: 5%;
+    color: black;
+}
+
+.footer-caja {
+    display: flex;
+	flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section {
+	width: 40%;
+    padding: 0% 0% 4% 0%;
+}
+
+.footer-section-museo{
+    width: 40%;
+    padding: 0% 0% 4% 0%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-section-socialmedia{
+    width: 10%;
+    padding: 0% 20% 0% 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-section-socialmedia img{
+    margin-right: 20px; 
+}
+
+#logofooter{
+    padding: 0% 0% 4% 0%;
+}
+
+
+
+/*MEDIA*/
+@media screen and (max-width: 768px) {
+
+/*  HOME*/
+    .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*  CONTACTO*/
+    .contacte {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding:20% 5% 3% 5%;
+    }
+
+/*  MENÚ*/
+    .overlay a{
+        padding: 3px;
+        text-decoration: none;
+        font-family: "Uncut sans semibold";
+        font-size: 3rem;
+        transition: .3s;
+    }
+
+    .overlay-content{
+        padding:50% 0% 0% 5%
+    }
+
+
+/*  PROGRAMACIÓN*/
+    #cabecera{
+        width: 100%;
+        padding:20% 5% 5% 5%;
+    }
+
+    #grupos{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .grupo{
+        width: 100%;
+        height: auto;
+        padding:5% 5% 5% 5%;
+    }
+
+
+/*  FOOTHER*/
+    .footer-caja {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .footer-section {
+        width: 100%;
+        padding: 5%;
+    }
+
+    .footer-section-museo{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 5%;
+
+    }
+
+    .footer-section-consorcio{
+        display: none;
+    }
+}
